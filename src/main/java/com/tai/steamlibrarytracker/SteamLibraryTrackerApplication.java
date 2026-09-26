@@ -1,4 +1,4 @@
-package com.tai.steam_library_tracker;
+package com.tai.steamlibrarytracker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
