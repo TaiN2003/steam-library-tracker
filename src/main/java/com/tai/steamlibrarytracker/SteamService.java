@@ -1,16 +1,14 @@
 package com.tai.steamlibrarytracker;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Service;
 
-@RestController 
+@Service
 public class SteamService {
     
     @Value("${steam.api-key}")
     private String apiKey;
 
-    @GetMapping("/test/api")
     public String getApiConfirmation() {
         if (apiKey != null && !apiKey.isBlank()) {
             return "api has value";
