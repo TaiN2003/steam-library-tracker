@@ -12,8 +12,8 @@ public class SteamController {
         this.steamService = steamService;
     }
 
-    @GetMapping("/test/api")
-    public String getSteamCall() {
-        return steamService.getApiConfirmation();
+    @GetMapping("/games")
+    public String getOwnedGames() {
+        return steamService.getOwnedGames();
     }
 }
