@@ -2,26 +2,36 @@ package com.tai.steamlibrarytracker;
 
 public class Game {
     private String name;
-    private int steamId;
+    private int appId;
+    private int playtimeForever;
 
-    public Game(String name, int steamId) {
+    public Game(String name, int appId, int playtimeForever) {
         this.name = name;
-        this.steamId = steamId;
+        this.appId = appId;
+        this.playtimeForever = playtimeForever;
     }
 
     public String getName() {
         return name;
     }
 
-    public int getSteamId() {
-        return steamId;
+    public int getAppId() {
+        return appId;
+    }
+
+    public int getPlaytimeForever() {
+        return playtimeForever;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setsteamId(int steamId) {
-        this.steamId = steamId;
+    public void setappId(int appId) {
+        this.appId = appId;
+    }
+
+    public void setPlaytimeForever(int playtimeForever) {
+        this.playtimeForever = playtimeForever;
     }
 }

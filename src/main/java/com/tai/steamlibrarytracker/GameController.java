@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class GameController {
     
     @GetMapping("/test/{name}/{steamId}")
-    public Game getGame(@PathVariable String name, @PathVariable int steamId) {
-        Game testGame = new Game(name, steamId);
+    public Game getGame(@PathVariable String name, @PathVariable int appId, @PathVariable int playtimeForever) {
+        Game testGame = new Game(name, appId, playtimeForever);
         
         return testGame;
     }
