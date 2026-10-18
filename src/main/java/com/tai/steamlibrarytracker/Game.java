@@ -27,7 +27,7 @@ public class Game {
         this.name = name;
     }
 
-    public void setappId(int appId) {
+    public void setAppId(int appId) {
         this.appId = appId;
     }
 
