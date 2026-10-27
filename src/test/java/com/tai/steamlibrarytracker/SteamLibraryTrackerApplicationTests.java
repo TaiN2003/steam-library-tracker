@@ -1,4 +1,4 @@
-package com.tai.steam_library_tracker;
+package com.tai.steamlibrarytracker;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
