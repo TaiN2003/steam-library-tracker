@@ -1,10 +1,17 @@
 package com.tai.steamlibrarytracker;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Game {
     private String name;
+    @JsonProperty("appid")
     private int appId;
+    @JsonProperty("playtime_forever")
     private int playtimeForever;
 
+    public Game() {    
+    }
+    
     public Game(String name, int appId, int playtimeForever) {
         this.name = name;
         this.appId = appId;

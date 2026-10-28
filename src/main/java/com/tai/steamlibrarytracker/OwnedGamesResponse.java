@@ -9,7 +9,6 @@ public class OwnedGamesResponse {
     private List<Game> games;
 
     public OwnedGamesResponse() {
-
     }
 
     public int getGameCount() {
